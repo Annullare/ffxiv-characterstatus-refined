@@ -22,31 +22,31 @@
     <value>伤害加成</value>
   </data>
   <data name="Panel_Damage_per_100_Potency" xml:space="preserve">
-    <value>预期伤害 / 100威力</value>
+    <value>预期伤害/100威力</value>
   </data>
   <data name="Panel_Heal_per_100_Potency" xml:space="preserve">
-    <value>预期治疗 / 100威力</value>
+    <value>预期治疗/100威力</value>
   </data>
   <data name="Panel_Damage_and_Mitigation" xml:space="preserve">
-    <value>伤害 / 减伤加成</value>
+    <value>伤害/减伤加成</value>
   </data>
   <data name="Panel_Direct_Hit_Chance" xml:space="preserve">
     <value>直击率</value>
   </data>
   <data name="Panel_Fire_IV_GCD" xml:space="preserve">
-    <value>炽炎 GCD</value>
+    <value>炽炎咏唱时间</value>
   </data>
   <data name="Panel_RubyRite_GCD" xml:space="preserve">
-    <value>红宝石之仪 GCD</value>
+    <value>红宝石之仪复唱时间</value>
   </data>
   <data name="Panel_GCD" xml:space="preserve">
-    <value>GCD</value>
+    <value>复唱时间</value>
   </data>
   <data name="Panel_Magic_Mitigation" xml:space="preserve">
     <value>魔法减免</value>
   </data>
   <data name="Panel_Mana_per_Tick" xml:space="preserve">
-    <value>每秒回蓝</value>
+    <value>每跳回蓝</value>
   </data>
   <data name="Panel_Physical_Mitigation" xml:space="preserve">
     <value>物理减免</value>
@@ -71,29 +71,29 @@
     <value>{@Title}直击{@Clear} 影响你的直击率.
 直击时会使伤害提高25%.
 
-每{PointsPerTier}点，直接命中率提高0.1%.</value>
+每{PointsPerTier}点，直击率提高0.1%.</value>
   </data>
   <data name="Tooltips_Skill_Spell_Speed_Tooltip" xml:space="preserve">
-    <value>{@Title}技能速度/咏唱速度{@Clear} 缩短施法时间和GCD速度，并增加DOT伤害.</value>
+    <value>{@Title}技能速度/咏唱速度{@Clear} 缩短战技/魔法的咏唱时间和复唱时间，并增加持续伤害和持续恢复效果.</value>
   </data>
   <data name="Tooltips_Skill_Spell_Speed_GCD" xml:space="preserve">
-    <value>每{PointsPerTier}点，{GCD}增加0.01s的GCD速度.</value>
+    <value>每{PointsPerTier}点，{GCD}秒复唱时间将减少0.01秒.</value>
   </data>
   <data name="Tooltips_Skill_Spell_Speed_With_Mod" xml:space="preserve">
-    <value>{@Highlight}这些预期数值{@Red}{ModName}{@Clear}是变化的. 
-按住Ctrl键查看不带{@Red}{ModName}{@Clear}的数值.{@Clear}</value>
+    <value>{@Highlight}这些预期数值已将{@Red}{ModName}{@Clear}的影响计算在内. 
+按住Ctrl键查看不受{@Red}{ModName}{@Clear}影响的数值.{@Clear}</value>
   </data>
   <data name="Tooltips_Skill_Spell_Speed_Without_Mod" xml:space="preserve">
-    <value>{@Highlight}按住Ctrl查看这些值的变化{@Red}{ModName}{@Clear}.{@Clear}</value>
+    <value>{@Highlight}按住Ctrl键查看计算{@Red}{ModName}{@Clear}后的数值.{@Clear}</value>
   </data>
   <data name="Tooltips_Skill_Spell_Speed_DoT_Increase" xml:space="preserve">
-    <value>DoT伤害,每{PointsPerTier}点,增加0.1%.</value>
+    <value>每{PointsPerTier}点，持续伤害和持续恢复效果增加0.1%.</value>
   </data>
   <data name="Tooltips_Next_Tier" xml:space="preserve">
-    <value>要到达下一个阈值，你还需要{@Highlight}{NextTier}{@Clear} {Points}.</value>
+    <value>要到达下一个阈值，你还需要{@Highlight}{NextTier}{@Clear}{Points}.</value>
   </data>
   <data name="Tooltips_Wasting" xml:space="preserve">
-    <value>你目前浪费了{@Wasting}{Wasting}{@Clear} {Points}属性.</value>
+    <value>你目前溢出了{@Wasting}{Wasting}{@Clear}{Points}属性.</value>
   </data>
   <data name="Tooltips_Wasting_Points_Singular" xml:space="preserve">
     <value>点</value>
@@ -102,41 +102,47 @@
     <value>点</value>
   </data>
   <data name="Tooltips_Expected_Damage" xml:space="preserve">
-    <value>预期伤害 / 100威力，包括暴击和直击，以及被动特性，如普通攻击伤害,DOT伤害和回复效果.
+    <value>100威力的技能造成的预期伤害，计算已考虑了暴击和直击，以及职业特性(例如技能效果提高).
 
 普通攻击会造成{@Highlight}{NormalValue}{@Clear}伤害.
 暴击会造成{@Highlight}{CritValue}{@Clear}伤害.
 
-伤害总是有±5%的浮动.</value>
+实际造成的伤害会有±5%的浮动.</value>
   </data>
   <data name="Tooltips_Expected_Heal" xml:space="preserve">
-    <value>预期治疗 / 100威力，包括暴击和被动特性，如普通攻击伤害，DOT伤害和治疗效果.
+    <value>100威力的治疗技能造成的预期恢复效果，计算已考虑了暴击和职业特性(例如技能效果提高).
 
-正常治疗将恢复{@Highlight}{NormalValue}{@Clear}HP.
-暴击治疗将恢复{@Highlight}{CritValue}{@Clear}HP.
+正常治疗将恢复{@Highlight}{NormalValue}{@Clear}生命值.
+暴击治疗将恢复{@Highlight}{CritValue}{@Clear}生命值.
 
-HP 恢复效果总是有±3%的浮动.</value>
+实际造成的恢复效果会有±3%的浮动.</value>
   </data>
   <data name="Tooltips_Tenacity_Tooltip" xml:space="preserve">
-    <value>{@Title}坚韧{@Clear} 增加对自己造成的伤害和回复的生命值，并减少受到的伤害.每{PointsPerTier}点,坚韧的效果提高0.1%。</value>
+    <value>{@Title}坚韧{@Clear} 增加造成的伤害量和治疗量，同时也减少自身所受的伤害量.
+
+每{PointsPerTier}点,坚韧的效果提高0.1%。</value>
   </data>
   <data name="Tooltips_Piety_Tooltip" xml:space="preserve">
-    <value>{@Title}信仰{@Clear} 增加每跳回蓝量(每3秒).默认情况下，每跳200点.
+    <value>{@Title}信仰{@Clear} 增加每跳回蓝量(每3秒).
+默认情况下，每跳会恢复200蓝量.
 
-每{PointsPerTier}点,额外获得1点的回蓝量.</value>
+每{PointsPerTier}点,每跳额外获得1点蓝量.</value>
   </data>
   <data name="Tooltips_Defense_Tooltip" xml:space="preserve">
-    <value>{@Title}防御{@Clear} 每{PointsPerTier}点,降低1%的物理伤害.</value>
+    <value>{@Title}物理防御力{@Clear} 每{PointsPerTier}点,减少1%受到的物理伤害.</value>
   </data>
   <data name="Tooltips_Magic_Defense_Tooltip" xml:space="preserve">
-    <value>{@Title}魔法防御{@Clear} 每{PointsPerTier}点,减少1%的魔法伤害.</value>
+    <value>{@Title}魔法防御力{@Clear} 每{PointsPerTier}点,减少1%受到的魔法伤害.</value>
   </data>
   <data name="Tooltips_Vitality_Tooltip" xml:space="preserve">
-    <value>{@Title}耐力{@Clear} 每{HpPerPoint}点,增加最大生命值.
+    <value>{@Title}耐力{@Clear} 每1点，增加{HpPerPoint}点最大生命值.
 作为{Job}你拥有{BaseHp}的基础生命值.</value>
   </data>
   <data name="Tooltips_Main_Stat_Tooltip" xml:space="preserve">
-    <value>{@Title}主属性{@Clear} 增加你的攻击造成的伤害和回复的生命值.主属性增加10%，伤害和治疗效果增加10%.</value>
+    <value>{@Title}主属性{@Clear} 增加你的技能造成的伤害和治疗量.
+每增加10%主属性，伤害和治疗量增加10%.
+
+召唤师的医术是唯一的例外，它受到精神加成而不是智力.</value>
   </data>
   <data name="Config_Character_Panel_Refined_Config" xml:space="preserve">
     <value>Character Panel Refined Config</value>
@@ -151,13 +157,14 @@ HP 恢复效果总是有±3%的浮动.</value>
     <value>覆盖所有属性的默认属性提示.</value>
   </data>
   <data name="Config_Window_Use_Game_Language_Tooltip" xml:space="preserve">
-    <value>如果可用，请使用这个插件的内部游戏语言。目前可选:英语，德语，法语，简体中文</value>
+    <value>如果可用，使该插件使用内置游戏语言.
+目前可选:英语，德语，法语，简体中文</value>
   </data>
   <data name="Config_Show_average_damage" xml:space="preserve">
-    <value>显示平均伤害</value>
+    <value>显示预期伤害</value>
   </data>
   <data name="Config_Show_average_healing" xml:space="preserve">
-    <value>显示平均治疗</value>
+    <value>显示预期治疗</value>
   </data>
   <data name="Config_Show_crit_damage_increase" xml:space="preserve">
     <value>显示暴击伤害</value>
@@ -166,18 +173,54 @@ HP 恢复效果总是有±3%的浮动.</value>
     <value>显示直击伤害</value>
   </data>
   <data name="Config_Help_Apply_Changes" xml:space="preserve">
-    <value>要应用任何配置更改，必须重新打开本插件.</value>
+    <value>要应用任何配置更改，你需要重新打开角色面板.</value>
   </data>
   <data name="Panel_excluding_Consumables" xml:space="preserve">
-    <value>除去食物效果</value>
+    <value>不包含食物/药品的数值</value>
   </data>
   <data name="Panel_CP" xml:space="preserve">
-    <value>CP</value>
+    <value>制作力</value>
   </data>
   <data name="Panel_GP" xml:space="preserve">
-    <value>GP</value>
+    <value>采集力</value>
   </data>
   <data name="Config_Show_stats_without_consumables" xml:space="preserve">
-    <value>显示不含食物的预期伤害/预期治疗</value>
+    <value>显示不包含食物/药品的生产采集职业状态</value>
+  </data>
+  <data name="Buff_LeyLines" xml:space="preserve">
+    <value>黑魔纹</value>
+  </data>
+  <data name="Buff_LeyLines_Abbrev" xml:space="preserve">
+    <value>黑魔纹</value>
+  </data>
+  <data name="Buff_GreasedLightning" xml:space="preserve">
+    <value>疾风迅雷</value>
+  </data>
+  <data name="Buff_GreasedLightning_Abbrev" xml:space="preserve">
+    <value>疾风迅雷</value>
+  </data>
+  <data name="Buff_Shifu" xml:space="preserve">
+    <value>风花</value>
+  </data>
+  <data name="Buff_PresenceOfMind" xml:space="preserve">
+    <value>神速咏唱</value>
+  </data>
+  <data name="Buff_PresenceOfMind_Abbrev" xml:space="preserve">
+    <value>神速咏唱</value>
+  </data>
+  <data name="Buff_Huton" xml:space="preserve">
+    <value>风遁之术</value>
+  </data>
+  <data name="Buff_ArmysPaeon" xml:space="preserve">
+    <value>军神的赞美歌</value>
+  </data>
+  <data name="Buff_ArmysPaeon_Abbrev" xml:space="preserve">
+    <value>军神歌</value>
+  </data>
+  <data name="Buff_Astrodyne" xml:space="preserve">
+    <value>星力</value>
+  </data>
+  <data name="Buff_Astrodyne_Abbrev" xml:space="preserve">
+    <value>星力</value>
   </data>
 </root>
