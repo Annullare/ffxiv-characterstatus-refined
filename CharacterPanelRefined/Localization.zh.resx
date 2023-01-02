@@ -60,24 +60,24 @@
   <data name="Tooltips_Crit_Tooltip" xml:space="preserve">
     <value>{@Title}暴击{@Clear} 影响你的攻击和治疗的暴击率，以及暴击时造成的伤害效果和恢复效果.
 
-每{PointsPerTier}点,暴击率和暴击伤害提高0.1%.</value>
+每{PointsPerTier}点，暴击率和暴击伤害增加0.1%.</value>
   </data>
   <data name="Tooltips_Determination_Tooltip" xml:space="preserve">
     <value>{@Title}信念{@Clear} 增加攻击造成的伤害以及治疗技能恢复的生命值.
 
-每{PointsPerTier}点,信念效果提高0.1%.</value>
+每{PointsPerTier}点，伤害和恢复效果增加0.1%.</value>
   </data>
   <data name="Tooltips_Direct_Hit_Tooltip" xml:space="preserve">
     <value>{@Title}直击{@Clear} 影响你的直击率.
-直击时会使伤害提高25%.
+直击时会使伤害增加25%.
 
-每{PointsPerTier}点，直击率提高0.1%.</value>
+每{PointsPerTier}点，直击率增加0.1%.</value>
   </data>
   <data name="Tooltips_Skill_Spell_Speed_Tooltip" xml:space="preserve">
     <value>{@Title}技能速度/咏唱速度{@Clear} 缩短战技/魔法的咏唱时间和复唱时间，并增加持续伤害和持续恢复效果.</value>
   </data>
   <data name="Tooltips_Skill_Spell_Speed_GCD" xml:space="preserve">
-    <value>每{PointsPerTier}点，{GCD}秒复唱时间将减少0.01秒.</value>
+    <value>每{PointsPerTier}点，复唱时间为{GCD}秒的战技/魔法，其复唱时间减少0.01秒.</value>
   </data>
   <data name="Tooltips_Skill_Spell_Speed_With_Mod" xml:space="preserve">
     <value>{@Highlight}这些预期数值已将{@Red}{ModName}{@Clear}的影响计算在内. 
@@ -120,19 +120,19 @@
   <data name="Tooltips_Tenacity_Tooltip" xml:space="preserve">
     <value>{@Title}坚韧{@Clear} 增加造成的伤害量和治疗量，同时也减少自身所受的伤害量.
 
-每{PointsPerTier}点,坚韧的效果提高0.1%。</value>
+每{PointsPerTier}点，伤害和恢复效果增加0.1%，减少0.1%受到的伤害。</value>
   </data>
   <data name="Tooltips_Piety_Tooltip" xml:space="preserve">
     <value>{@Title}信仰{@Clear} 增加每跳回蓝量(每3秒).
 默认情况下，每跳会恢复200蓝量.
 
-每{PointsPerTier}点,每跳额外获得1点蓝量.</value>
+每{PointsPerTier}点，每跳额外获得1点蓝量.</value>
   </data>
   <data name="Tooltips_Defense_Tooltip" xml:space="preserve">
-    <value>{@Title}物理防御力{@Clear} 每{PointsPerTier}点,减少1%受到的物理伤害.</value>
+    <value>{@Title}物理防御力{@Clear} 每{PointsPerTier}点，减少1%受到的物理伤害.</value>
   </data>
   <data name="Tooltips_Magic_Defense_Tooltip" xml:space="preserve">
-    <value>{@Title}魔法防御力{@Clear} 每{PointsPerTier}点,减少1%受到的魔法伤害.</value>
+    <value>{@Title}魔法防御力{@Clear} 每{PointsPerTier}点，减少1%受到的魔法伤害.</value>
   </data>
   <data name="Tooltips_Vitality_Tooltip" xml:space="preserve">
     <value>{@Title}耐力{@Clear} 每1点，增加{HpPerPoint}点最大生命值.
